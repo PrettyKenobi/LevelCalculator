@@ -8,4 +8,4 @@ def test_version():
     result = runner.invoke(cli, ['--version'])
 
     assert result.exit_code == 0
-    assert f"{__app_name__} v{__version__}\n" in result.output
+    assert f"{__app_name__} v{__version__}\nd" in result.output

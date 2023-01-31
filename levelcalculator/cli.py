@@ -8,7 +8,8 @@ app = typer.Typer()
 
 """ Callback function for the `version` command.
 
-:param value:
+:param value: 
+:type value: boolean
 """
 def _version_callback(value: bool) -> None:
     if value:
@@ -28,4 +29,19 @@ def version(
 ) -> None:
     return
 
+
+# def _minimum_experience(level: int):
+# """
+# """
+
+
 @app.callback()
+def calculate_level(experience: int) -> int:
+    """ Calculates a character's level based on the total amount of experience
+    they have.
+    
+    :param experience: How much experience they have.
+    :type experience: int
+
+    :return
+    """
