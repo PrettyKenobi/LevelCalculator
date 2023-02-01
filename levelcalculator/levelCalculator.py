@@ -17,12 +17,12 @@ class LevelCalculator:
     self.overall_experience = experience
     self.current_level = level
 
-  def calculate_new_level(self):
+  def calculate_new_level(self) -> int:
     """Calculates the character's new level based on total experience. Currently
     it starts with requireing 10 experience to reace level 2, then doubles the
     amount of expereince for each level after that.
     """
-    level = 1
+    level = self.current_level
     experience_required = 10
     experience = self.overall_experience
 
@@ -33,3 +33,5 @@ class LevelCalculator:
 
     self.previous_level = self.current_level
     self.current_level = level
+    
+    return self.current_level
