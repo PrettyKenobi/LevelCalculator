@@ -1,6 +1,6 @@
 import pytest
 
-from levelCalculator import LevelCalculator
+from level_calculator import *
 
 
 class Test_LevelCalculator:

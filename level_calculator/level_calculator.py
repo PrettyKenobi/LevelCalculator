@@ -1,5 +1,3 @@
-import typing
-
 class LevelCalculator:
   """This class does the actual calculations.
 

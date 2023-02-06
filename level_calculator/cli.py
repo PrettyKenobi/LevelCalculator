@@ -5,7 +5,7 @@ from rich import print
 from rich.markup import escape
 from rich.panel import Panel
 
-from levelcalculator import __app_name__, __version__
+from level_calculator import __app_name__, __version__
 
 app = typer.Typer()
 
@@ -47,9 +47,10 @@ def version(
 
 
 @app.command()
-def calculate_level(experience: int = typer.Argument(
+def level(experience: int = typer.Argument(
 ..., 
 help="The character's total experience points")) -> None:
     calc = level_calculator.LevelCalculator(1, experience)
     new_level = calc.calculate_new_level()
     print(f":sparkles: You are now level {escape(new_level)}! :sparkels:")
+    raise typer.Exit()
