@@ -22,8 +22,9 @@ build.backend = "poetry.core.masonry.api"
 name = "levelcalculator"
 
 [tool.pytest.ini_options]
-addopts = "--color=yes -ra"
+addopts = "--color=yes -ra --import-mode=importlib"
 log_cli = "True"
 testpaths = ["tests"]
+
 
 
