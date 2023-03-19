@@ -25,6 +25,3 @@ name = "levelcalculator"
 addopts = "--color=yes -ra --import-mode=importlib"
 log_cli = "True"
 testpaths = ["tests"]
-
-
-
